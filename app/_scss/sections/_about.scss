@@ -1,0 +1,44 @@
+#section-about {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  background-image: url('/assets/bio-bkgd.jpg');
+  @include parallax-background();
+  background-position: bottom center;
+
+  h2 {
+    color: $c-dark-purple;
+    font-family: $ff-roboto-condensed;
+    font-weight: 600;
+  }
+  p {
+    color: $c-darkish-purple;
+    font-weight: 400;
+  }
+  p:last-child {
+    margin-bottom: $spacing-xxl;
+    @media screen and (min-width: $width-lg) {
+      margin-bottom: 100px;
+    }
+  }
+
+  .bio-image {
+    position: absolute;
+    bottom: 0;
+    width: 42%;
+    text-align: center;
+    img {
+      max-height: 600px;
+    }
+
+    @media screen and (max-width: $width-sm) {
+      position: relative;
+      width: 100%;
+    }
+
+  }
+  @media screen and (max-width: $width-sm) {
+    padding-bottom: 0;
+  }
+}

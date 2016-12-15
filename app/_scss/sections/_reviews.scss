@@ -1,0 +1,70 @@
+#section-reviews {
+  background-image: url('/assets/reviews-background.jpg');
+  background-attachment: fixed;
+  @include parallax-background;
+
+  .heading {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-sm;
+    h2 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 700;
+      color: $c-white;
+    }
+  }
+
+  .video-item {
+    @include hover-plus;
+    border: solid white 2px;
+    a {
+      display: block;
+    }
+  }
+
+  .js-video-carousel {
+    padding-bottom: $spacing-lg;
+  }
+
+  .js-review-carousel {
+    padding-bottom: $spacing-lg;
+    .review-bubble {
+      background-color: $c-white;
+      padding: $spacing-xs;
+      padding-left: $spacing-md;
+      padding-right: $spacing-md;
+      .stars {
+        i {
+          color: $c-star-2;
+          font-size: 32px;
+          @media screen and (max-width: $width-sm) {
+            font-size: 24px;
+          }
+        }
+      }
+      .review {
+        color: $c-darker-purple;
+        @media screen and (max-width: $width-sm) {
+          p {line-height: 1.1;}
+        }
+      }
+    }
+
+    .arrow-down {
+      margin-right: auto;
+      margin-left: auto;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid $c-white;
+    }
+
+    .reviewer {
+      display: inline-block;
+      text-align: center;
+      color: $c-white;
+      margin-left: $spacing-lg;
+    }
+
+  }
+}
