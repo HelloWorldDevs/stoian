@@ -3,42 +3,58 @@
   padding-top: 60px;
   padding-bottom: 100px;
 
-  background-image: url('/assets/bio-bkgd.jpg');
+  background-image: url('/assets/bio-bg.jpg');
   @include parallax-background();
   background-position: bottom center;
 
-  h2 {
-    color: $c-dark-purple;
-    font-family: $ff-roboto-condensed;
-    font-weight: 600;
-  }
-  p {
-    color: $c-darkish-purple;
-    font-weight: 400;
-  }
-  p:last-child {
-    margin-bottom: $spacing-xxl;
-    @media screen and (min-width: $width-lg) {
-      margin-bottom: 100px;
+
+  .heading {
+    text-align: center;
+
+    &--main {
+      color: $c-black-green;
+      font-family: $ff-mont;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: $spacing-xs;
+      span {
+        @include h3;
+        font-weight: 700;
+      }
+    }
+
+    &--byline {
+      color: $c-teal;
+      font-family: $ff-great-vibes;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 0.5;
+    }
+
+    &--break {
+      display: inline-block;
+      width: 200px;
+      border-bottom: 2px solid $c-breakline-grey;
+      margin-bottom: $spacing-md;
     }
   }
 
   .bio-image {
-    position: absolute;
-    bottom: 0;
-    width: 42%;
     text-align: center;
-    img {
-      max-height: 600px;
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-md;
     }
-
-    @media screen and (max-width: $width-sm) {
-      position: relative;
-      width: 100%;
-    }
-
   }
-  @media screen and (max-width: $width-sm) {
-    padding-bottom: 0;
+
+  .row {
+    @media screen and (min-width: $width-md+1) {
+      display: flex;
+    }
+    &>div:last-child {
+      background-color: #fff;
+      padding: $spacing-md;
+      color: $c-grey;
+    }
   }
 }
