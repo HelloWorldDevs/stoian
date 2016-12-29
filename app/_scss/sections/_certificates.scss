@@ -1,9 +1,14 @@
 #section-certificates {
   background-color: $c-associations;
-  padding-top: $spacing-sm;
-  padding-bottom: $spacing-sm;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
+
   .owl-item {
     text-align: center;
+    height: 100%;
+    position: relative;
+    top: 37px;
+    transform: translateY(-50%);
     img {
       width: inherit;
       margin-right: auto;

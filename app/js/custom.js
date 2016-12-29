@@ -112,12 +112,15 @@
     center: true,
     responsive: {
       480: {
-        items: 2
+        items: 1
       },
       768: {
-        items: 3
+        items: 2
       },
       992: {
+        items: 3
+      },
+      1200: {
         items: 5,
         autoplay: false
       }
