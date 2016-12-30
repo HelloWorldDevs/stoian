@@ -37,7 +37,7 @@
   }
 
   .card {
-    background-color: rgba($c-white, 0.75);
+    background-color: rgba($c-white, 0);
     text-align: center;
     height: 100%;
     border-radius: 0.1px;
@@ -45,10 +45,13 @@
 
 
     .top {
+      height: 180px;
+      border-bottom: 5px solid rgba(255, 255, 255, 0);
       .price {
         position: relative;
         display: inline-block;
-        border-radius: 10000px;
+        border-radius: 6px;
+        border: solid 3px white;
         height: 150px;
         width: 150px;
       }
@@ -58,16 +61,17 @@
         padding: $spacing-sm;
         padding-top: $spacing-md;
         line-height: $lh-xs;
-        font-family: $ff-open;
+        font-family: $ff-mont;
         font-weight: 700;
-        font-size: 90px !important;
+        font-size: 84px !important;
         &:before {
+          font-family: $ff-lato;
           content: '$';
-          font-size: 28px;
+          font-size: 36px;
           font-weight: 400;
           position: absolute;
           top: $spacing-md;
-          left: 15px;
+          left: 5px;
         }
       }
       h3 {
@@ -83,6 +87,7 @@
     }
 
     .bottom {
+      background-color: rgba($c-white, 0.75);
       // Savings
       h6:first-child {
         padding-top: $spacing-md;
@@ -105,9 +110,9 @@
   .card-1 .price {  background-color: $c-card1;  }
   .card-2 .price {  background-color: $c-card2;  }
   .card-3 .price {  background-color: $c-card3;  }
-  .card-1 h6:first-child {  color: $c-white;  }
-  .card-2 h6:first-child {  color: $c-white;  }
-  .card-3 h6:first-child {  color: $c-white;  }
+  .card-1 .top {  background-color: #4DCEED;  }
+  .card-2 .top {  background-color: #AD9C2A;  }
+  .card-3 .top {  background-color: #F38400;  }
 
   .row {
     display: flex;
