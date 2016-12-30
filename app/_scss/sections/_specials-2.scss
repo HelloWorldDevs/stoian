@@ -1,21 +1,31 @@
 #section-specials {
 
-  .container-wrapper {
-    background-image: url('../../assets/flower-specials-bg.jpg');
+    background-image: url('/assets/specials-winter.jpg');
     @include parallax-background;
-    padding-top: $spacing-lg;
-  }
+
 
   .heading {
-    background-color: $c-darkish-purple;
-    padding-bottom: $spacing-md;
-    padding-top: $spacing-md;
-    h2 {
-      font-family: $ff-roboto-condensed;
-      color: $c-white;
+
+    padding-bottom: $spacing-xl;
+    padding-top: $spacing-xl;
+
+    &--lead {
+      font-family: $ff-great-vibes;
+      font-weight: 400;
+      color: #ffffff;
       margin-bottom: 0;
-      line-height: $lh-sm;
-      font-weight: 600;
+      line-height: 1;
+    }
+    &--main {
+      font-family: $ff-mont;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $c-grey-red;
+      margin-bottom: $spacing-sm;
+    }
+    hr {
+      width: 200px;
+      border-top-color: grey;
     }
     h3 {
       color: $c-white;
