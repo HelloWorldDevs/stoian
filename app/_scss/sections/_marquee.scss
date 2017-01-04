@@ -96,6 +96,11 @@
     height: 20px;
   }
 
+  //Reposition arrow higher for transparent phone-slug
+  .one-page-arrow {
+    bottom: 140px;
+  }
+
 }
 
 .animated.infinite {
@@ -103,7 +108,7 @@
   left: 50%;
   bottom: 20px;
   z-index: 999;
-  color: $c-darkish-purple;
+  color: $c-grey-red-2;
 }
 
 .icon-arrow-down {
