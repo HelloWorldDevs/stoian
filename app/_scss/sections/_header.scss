@@ -68,6 +68,7 @@
   font-weight: 700;
 
   background-color: rgba($c-white,0);
+
   #primary-menu-trigger {
     font-size: 30px;
     pointer-events: auto;
@@ -80,6 +81,7 @@
     margin-right: 0px;
     border-right: none;
   }
+
   &:not(.sticky-header) #logo img:last-child {
     visibility: none;
     display: none;
@@ -107,16 +109,23 @@
       }
     }
   }
+  @media (max-width: 991px) {
+    position: inherit;
+    &:not(.sticky-header) #logo img:last-child {
+      visibility: visible;
+      display: inline-block;
+    }
+    #logo img:first-child {
+      visibility: none;
+      display: none;
+    }
+  }
 
   @media screen and (max-width: $width-md) {
     #logo {
       img {
         margin-right: 100%;
         padding: $spacing-xs;
-        img:first-child {
-          visibility: none;
-          display: none;
-        }
       }
     }
     #primary-menu-trigger {
