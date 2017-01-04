@@ -45,7 +45,7 @@
     text-align: center;
     height: 100%;
     border-radius: 0.1px;
-    color: $c-darkish-purple;
+    color: $c-white;
 
 
     .top {
@@ -72,40 +72,46 @@
           font-family: $ff-lato;
           content: '$';
           font-size: 36px;
-          font-weight: 400;
+          font-weight: 300;
           position: absolute;
           top: $spacing-md;
-          left: 5px;
+          left: 2px;
         }
       }
       h3 {
-        font-family: $ff-lato;
-        color: $c-darkish-purple;
+        font-family: $ff-mont;
+        color: $c-white;
         margin-bottom: 0;
         line-height: $lh-xs;
         padding-top: $spacing-md;
-        font-size: 30px;
-        font-weight: 900;
+        @include font-size(30px, 30px, 25px, 30px, 30px);
+        font-weight: 100;
         padding-bottom: $spacing-sm;
+        span {
+          font-weight: 700;
+        }
       }
     }
 
     .bottom {
+      margin-top: 5px;
       height: 100%;
 
-      background-color: rgba($c-white, 0.75);
+      background-color: rgba($c-white, 1);
       // Savings
       h6:first-child {
-        padding-top: $spacing-md;
-        color: $c-darkish-purple;
+        padding-top: 80px;
+        text-transform: uppercase;
         @include h5;
-        font-weight: 700;
+        font-family: $ff-lato;
+        font-weight: 400;
       }
       .copy {
         font-family: $ff-open;
         padding-left: $spacing-sm;
         padding-right: $spacing-sm;
-        color: $c-darkish-purple;
+        color: $c-grey-red-4;
+        font-weight: 400;
         margin-bottom: 80px;
       }
       p {
@@ -115,13 +121,16 @@
         bottom: 0;
         width: 100%;
         padding-bottom: $spacing-sm;
-        color: $c-darkish-purple;
+        color: $c-grey-red-4;
       }
     }
   }
   .card-1 .price {  background-color: $c-card1;  }
   .card-2 .price {  background-color: $c-card2;  }
   .card-3 .price {  background-color: $c-card3;  }
+  .card-1 .bottom h6:first-child {  color: $c-card1;  }
+  .card-2 .bottom h6:first-child {  color: $c-card2;  }
+  .card-3 .bottom h6:first-child {  color: $c-card3;  }
   .card-1 .top {  background-color: #4DCEED;  }
   .card-2 .top {  background-color: #AD9C2A;  }
   .card-3 .top {  background-color: #F38400;  }
