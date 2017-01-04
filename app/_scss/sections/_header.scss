@@ -60,8 +60,9 @@
 }
 
 
-#header.full-header {
+#header {
 
+  position: absolute;
   width: 100%;
   font-family: $ff-mont;
   font-weight: 700;
@@ -79,6 +80,10 @@
     margin-right: 0px;
     border-right: none;
   }
+  &:not(.sticky-header) #logo img:last-child {
+    visibility: none;
+    display: none;
+  }
 
   #primary-menu > ul {
     margin-right: 0;
@@ -93,7 +98,13 @@
   //when you scroll down
   &.sticky-header {
     #header-wrap {
-      background-color: $c-white;
+      background-color: rgba($c-white,0.7);
+    }
+    #logo {
+      img:first-child {
+        visibility: none;
+        display: none;
+      }
     }
   }
 
@@ -102,6 +113,10 @@
       img {
         margin-right: 100%;
         padding: $spacing-xs;
+        img:first-child {
+          visibility: none;
+          display: none;
+        }
       }
     }
     #primary-menu-trigger {
