@@ -37,6 +37,10 @@
   }
 
   .card {
+    //height fix
+    display: flex;
+    flex-direction: column;
+
     background-color: rgba($c-white, 0);
     text-align: center;
     height: 100%;
@@ -87,6 +91,8 @@
     }
 
     .bottom {
+      height: 100%;
+
       background-color: rgba($c-white, 0.75);
       // Savings
       h6:first-child {
@@ -100,9 +106,15 @@
         padding-left: $spacing-sm;
         padding-right: $spacing-sm;
         color: $c-darkish-purple;
+        margin-bottom: 80px;
       }
       p {
-        padding-bottom: $spacing-md;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        padding-bottom: $spacing-sm;
         color: $c-darkish-purple;
       }
     }
