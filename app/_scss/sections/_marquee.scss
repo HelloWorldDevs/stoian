@@ -21,10 +21,29 @@
   }
 
   .slide1 {
-    h4 {
-      line-height: $lh-sm;
-      color: $c-darkish-purple;
-      font-family: $ff-lato;
+    h3:first-child {
+      margin-bottom: 0;
+      font-family: $ff-mont;
+      font-weight: 700;
+      color: $c-grey-red;
+    }
+    h3:nth-child(2) {
+      font-family: $ff-great-vibes;
+      margin-bottom: 0;
+      color: $c-teal-2;
+      @include h2;
+      font-weight: 400;
+    }
+    h2 {
+      @include font-size(62px, 52px, 62px, 62px, 62px);
+      color: $c-grey-red;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    h1 {
+      color: $c-beige-green;
+      @include font-size(81px, 68px, 62px, 62px, 62px);
+      font-weight: 700;
     }
 
   }
