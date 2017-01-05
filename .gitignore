@@ -6,4 +6,4 @@ siteConfig.py
 npm-debug.log
 .htaccess
 build
-app/css
+app/css/main.css
