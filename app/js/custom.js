@@ -52,7 +52,7 @@
   });
 
 
-  $('.js-video-carousel').owlCarousel({
+  $('.js-services-carousel').owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
@@ -61,41 +61,20 @@
     autoplayHoverPause:false,
     nav: true,
     dots: false,
+    margin: 60,
     navText: [
       '<i class="icon-chevron-left"></i>',
       '<i class="icon-chevron-right"></i>'
     ],
-    margin: 40,
     responsive: {
       480: {
-        items: 1
+        items: 2
       },
       768: {
-        items: 2
+        items: 3
       },
       992: {
-        items: 3
-      }
-    }
-  });
-
-  $('.js-review-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 400,
-    autoplayTimeout: 6000,
-    autoplayHoverPause:false,
-    nav: true,
-    dots: false,
-    navText: [
-      '<i class="icon-chevron-left"></i>',
-      '<i class="icon-chevron-right"></i>'
-    ],
-    margin: 40,
-    responsive: {
-      768: {
-        items: 2
+        items: 4
       }
     }
   });
