@@ -63,8 +63,8 @@
     dots: false,
     margin: 60,
     navText: [
-      '<i class="icon-chevron-left"></i>',
-      '<i class="icon-chevron-right"></i>'
+      '<i class="icon-caret-left"></i>',
+      '<i class="icon-caret-right"></i>'
     ],
     responsive: {
       480: {

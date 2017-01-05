@@ -1,35 +1,37 @@
 .owl-carousel .owl-nav [class*=owl-] {
   position: absolute;
   top: 50%;
-  margin-top: -30px;
-  right: -16px;
+  margin-top: -60px;
+  right: -70px;
   zoom: 1;
-  width: 34px;
-  height: 34px;
+  width: 65px;
+  height: 65px;
   line-height: 32px;
   color: $c-white;
-  background-color: $c-darkish-purple;
-  border: solid 2px $c-white;
-  font-size: 32px;
+  background-color: rgba($c-white, 0.39);
+  font-size: 60px;
   border-radius: 0;
   opacity: 1;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
   & [class*=icon-] {
-    font-size: 15px;
+    font-size: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -15px;
-    margin-left: -5px;
+    margin-left: -8px;
+  }
+  & .icon-caret-left {
+    margin-left: -12px;
   }
   img {
     @include vertical-center;
   }
 }
 .owl-carousel .owl-nav .owl-prev {
-  left: -16px;
+  left: -70px;
   img {
     -moz-transform: scaleX(-1) translateY(-50%);
     -o-transform: scaleX(-1) translateY(-50%);
@@ -42,20 +44,20 @@
 
 .owl-carousel:hover .owl-nav .owl-next {
   left: auto;
-  right: -16px;
+  right: -70px;
 }
 .owl-carousel:hover .owl-nav .owl-prev {
   opacity: 1;
-  left: -16px;
+  left: -70px;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
-  background-color: darken($c-darkish-purple, 10%) !important;
+  background-color: rgba($c-white, 0.20) !important;
   color: $c-white !important;
   text-decoration: none;
 }
 
-.carousel-wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+.carousel--wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
 }

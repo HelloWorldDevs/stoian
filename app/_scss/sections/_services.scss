@@ -85,11 +85,33 @@
         }
       }
     }
+  }
+}
 
-
+.services-carousel {
+  background-color: #cfd1ce;
+  .container-fluid {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 
+  .service-item {
 
+    a { @include link-color($c-grey-red); }
+
+    &--image {
+      @include hover-plus();
+    }
+
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $ff-mont;
+      font-weight: 700;
+      padding-top: 15px;
+      @include font-size(18px, 14px, 15px, 14px, 14px);
+    }
+  }
 }
 
 .service-modal-wrapper {
