@@ -147,26 +147,6 @@
       overviewMapControl: false
     }
   });
-  
-  //Turn off review videos on modal close
-  $(window).load(function() {
-    var reviewBundle = [];
-    reviewBundle.push(  new YT.Player('review-video1', {})  );
-    reviewBundle.push(  new YT.Player('review-video2', {})  );
-    reviewBundle.push(  new YT.Player('review-video3', {})  );
-    reviewBundle.push(  new YT.Player('review-video4', {})  );
-    reviewBundle.push(  new YT.Player('review-video5', {})  );
-    reviewBundle.push(  new YT.Player('review-video6', {})  );
-    reviewBundle.push(  new YT.Player('review-video7', {})  );
-    reviewBundle.push(  new YT.Player('review-video8', {})  );
-    $('.js-review-modal').on('hide.bs.modal', function() {
-      reviewBundle.forEach(function(player) {
-        player.stopVideo();
-      })
-    });
-  });
-
-
 
   // Fix for menu scroll to links. Offsets are needed for desktop but not tablet or mobile.
   // ======================================================================================

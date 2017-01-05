@@ -83,3 +83,16 @@
     color: $color;
   }
 }
+
+/// Styling for the Birdeye Reviews Footer
+@mixin birdeye-footer() {
+  .bf-dv {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color: #FFF !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .bf-pro {
+    color: #FFF !important;;
+  }
+}
