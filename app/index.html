@@ -109,7 +109,7 @@
 									<h2>MOST LOVED</h2>
 									<h1>DENTISTS</h1>
 
-									<a href="#" class="btn" data-scrollTo="#section-specials" data-offset="60">REQUEST AN APPOINTMENT</a>
+									<button class="btn" data-toggle="modal" data-target="#requestAppointmentForm">REQUEST AN APPOINTMENT</button>
 								</div>
 							</div>
 						</div>
@@ -358,105 +358,71 @@
 
 			<section id="section-services" class="parallax">
 				<div class="heading">
-					<div class="center"><h2>Our Services</h2></div>
+					<h2>Our Services</h2>
 					<div class="container">
-						<P>By actively preventing disease and decay through regular home care, professional dental cleanings and
-							regular exams, we’ll partner with you to maintain your healthy, beautiful smile. Prevention is always better
-							than treatment, so if it’s been a while since you’ve seen a dentist, please give us a call or <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment</a>.</P>
+						<p>By actively preventing disease and decay through regular home care, professional dental cleanings and
+							regular exams, we’ll partner with you to maintain your healthy, beautiful smile. Prevention is always
+							better than treatment, so if it’s been a while since you’ve seen a dentist, please give us a call or <a
+									href="#" data-toggle="modal" data-target="#requestAppointmentForm">click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment.</a></p>
 					</div>
 				</div>
 
-				<div class="service-marquee parallax">
-					<div class="spacer">
-					</div>
-					<div class="transparent-slab">
-						<div class="container">
-							<h2>Care for the Whole Family</h2>
-							<p>From toddlers to the elderly, our skilled dental team is familiar with the unique needs of every
-								patient, no matter their age. Our goal is to help them develop great oral habits that will last them a
-								lifetime. Join us today and discover how our practice can help treat your entire family.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="services-grid">
+				<div class="services--main">
 					<div class="container">
+
 						<div class="row">
-
-
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal1" data-toggle="modal"><div class="service-image"><img src="assets/services/see-your-smile.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal1" data-toggle="modal">SEE YOUR NEW SMILE NOW</a></h4>
-								<a href="#" data-target="#service-modal1" data-toggle="modal" class="learn-more">Learn More</a>
+							<div class="col-sm-6">
+								<div class="hidden-sm hidden-xs">
+									<img src="assets/services/cosmetic.jpg" alt="Woman smiling">
+								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal2" data-toggle="modal"><div class="service-image"><img src="assets/services/smile-whitening.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal2" data-toggle="modal">ZOOM!® WHITENING</a></h4>
-								<a href="#" data-target="#service-modal2" data-toggle="modal" class="learn-more">Learn More</a>
+							<div class="col-sm-6 text-one">
+								<h3>SMILE MAKEOVERS</h3>
+								<div class="hidden-md hidden-lg mobile-image">
+									<img src="assets/services/cosmetic.jpg" alt="Woman smiling">
+								</div>
+								<p>Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful,
+									bright, healthy smile will increase self-confidence and overall life satisfaction. Cosmetic dentistry
+									includes things like tooth-colored restorations, dental implants, and crowns. We have many options, so
+									please call us today!</p>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal3" data-toggle="modal"><div class="service-image"><img src="assets/services/lumineers.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal3" data-toggle="modal">LUMINEERS®</a></h4>
-								<a href="#" data-target="#service-modal3" data-toggle="modal" class="learn-more">Learn More</a>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 text-two">
+								<h3>SLEEP APNEA TREATMENT</h3>
+								<div class="hidden-md hidden-lg mobile-image">
+									<img src="assets/services/apnea.jpg" alt="Couple Sleeping Well">
+								</div>
+								<p>Obstructive sleep apnea occurs when the airway completely collapses, blocking airflow into the lungs.
+									The harder one tries to breathe, the tighter the airway seals. This airway obstruction persists until
+									the brain partially awakens the person, unconsciously closing the jaw and returning the tongue and
+									throat to a normal position. We offer effective, nonsurgical relief from sleep apnea and other
+									sleep-related disorders—including snoring. Ask us how you can get the restful, healthy sleep you’ve been
+									missing.</p>
 							</div>
-
-							<div class="clearfix hidden-xs hidden-sm"></div>
-
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal4" data-toggle="modal"><div class="service-image"><img src="assets/services/implants.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal4" data-toggle="modal">DENTAL IMPLANTS</a></h4>
-								<a href="#" data-target="#service-modal4" data-toggle="modal" class="learn-more">Learn More</a>
+							<div class="col-sm-6 col-sm-push-6">
+								<div class="hidden-sm hidden-xs">
+									<img src="assets/services/apnea.jpg" alt="Couple Sleeping Well">
+								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal5" data-toggle="modal"><div class="service-image"><img src="assets/services/crowns-bridges.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal5" data-toggle="modal">CROWNS AND BRIDGES</a></h4>
-								<a href="#" data-target="#service-modal5" data-toggle="modal" class="learn-more">Learn More</a>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-push-4">
+								<img src="assets/services/logo.gif" alt="Invisalign">
+								<p>These “invisible” aligners are the latest in orthodontic technology for adults and teens. Straight
+									teeth and a revitalized smile no longer need to come from a mouth full of unattractive wire and bracket
+									braces. Enhancing self-esteem and physical confidence, invisible braces offer an esthetic and barely
+									visible alternative to conventional wire/bracket braces. Get the smile you've always wanted with
+									Invisalign® Orthodontics.</p>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal6" data-toggle="modal"><div class="service-image"><img src="assets/services/empress-restorations.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal6" data-toggle="modal">EMPRESS® RESTORATIONS</a></h4>
-								<a href="#" data-target="#service-modal6" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-
-							<div class="clearfix"></div>
-
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal7" data-toggle="modal"><div class="service-image"><img src="assets/services/veneers.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal7" data-toggle="modal">daVinci™ VENEERS</a></h4>
-								<a href="#" data-target="#service-modal7" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal8" data-toggle="modal"><div class="service-image"><img src="assets/services/invisalign.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal8" data-toggle="modal">INVISALIGN® ORTHODONTICS</a></h4>
-								<a href="#" data-target="#service-modal8" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal9" data-toggle="modal"><div class="service-image"><img src="assets/services/all-on-4.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal9" data-toggle="modal">All-on-4® IMPLANTS</a></h4>
-								<a href="#" data-target="#service-modal9" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-
-							<div class="clearfix hidden-xs hidden-sm"></div>
-
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal10" data-toggle="modal"><div class="service-image"><img src="assets/services/sedation.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal10" data-toggle="modal">SEDATION DENTISTRY</a></h4>
-								<a href="#" data-target="#service-modal10" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal11" data-toggle="modal"><div class="service-image"><img src="assets/services/tmj.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal11" data-toggle="modal">DO YOU HAVE HEADACHES?</a></h4>
-								<a href="#" data-target="#service-modal11" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<a href="#" data-target="#service-modal12" data-toggle="modal"><div class="service-image"><img src="assets/services/laser.jpg" alt="Image for dental service"></div></a>
-								<h4><a href="#" data-target="#service-modal12" data-toggle="modal">LASER DENTISTRY</a></h4>
-								<a href="#" data-target="#service-modal12" data-toggle="modal" class="learn-more">Learn More</a>
-							</div>
-
 						</div>
 					</div>
+					<div class="hand-image">
+						<img src="assets/services/Invisalign.jpg" alt="Invisalign dentures">
+					</div>
 				</div>
+
+
 			</section>
 			<!--Service Modals-->
 			<div class="service-modal-wrapper">
