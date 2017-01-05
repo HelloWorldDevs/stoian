@@ -2,7 +2,7 @@
   position: relative;
   
   .location-card--wrapper {
-    background: rgba($c-white, 0.35);
+    background: rgba($c-white, 0.65);
     position: absolute;
     z-index: 10;
     height: 100%;
@@ -29,32 +29,47 @@
   img {
     padding-top: $spacing-md;
     padding-bottom: $spacing-sm;
-    padding-left: $spacing-sm;
-    padding-right: $spacing-sm;
+  }
+  p {
+    color: $c-grey-red;
+    font-family: $ff-lato;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 0.8;
   }
   h6 {
-    color: $c-darker-purple;
+    color: #3B5170;
+    font-family: $ff-lato;
+    font-weight: 400;
+    font-size: 16px;
     margin-bottom: 0;
     line-height: $lh-sm;
   }
   a>h6 {
-    font-family: $ff-open;
-    color: $c-darkish-purple;
+    padding-top: 30px;
+    font-family: $ff-lato;
     padding-bottom: $spacing-md;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fa9322;
   }
   .phone-number {
     line-height: $lh-sm;
-    color: $c-darkish-purple;
-    font-family: $ff-roboto-condensed;
+    color: $c-grey-red;
+    font-family: $ff-mont;
     font-weight: 900;
     margin-bottom: 0;
     a:hover {
-      color: $c-darkish-purple !important;
+      color: #3B5170 !important;
       text-decoration: none;
     }
     &:hover {
       text-decoration: none;
     }
+  }
+  .phone-number-2 {
+    color: #3b5170;
   }
   .btn {
     margin-top: $spacing-md;
@@ -76,11 +91,12 @@
   //color: $c-grey-location;
   padding-bottom: $spacing-md;
   h5 {
-    color: $c-darkish-purple;
-    text-transform: capitalize;
+    color: $c-grey-red;
+    text-transform: uppercase;
     font-family: $ff-lato;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 0;
+    font-size: 21px;
   }
   th {
     width: 1px;
@@ -90,7 +106,7 @@
   }
 
   td {
-    text-align: center;
+    text-align: left;
   }
 
   table {
