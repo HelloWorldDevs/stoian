@@ -38,19 +38,18 @@
 ////
 @import "sections/about";
 @import "sections/certificates";
-//@import "sections/footer";
+@import "sections/footer";
 @import "sections/header";
 @import "sections/insurance";
-//@import "sections/location";
+@import "sections/location";
 @import "sections/marquee";
 @import "sections/phone-slab";
 @import "sections/reviews";
 @import "sections/specials-2";
 @import "sections/services";
-//@import "sections/tour";
 
-//#bf-revz-widget-1913325476 {
-//  @media screen and (max-width: 400px) {
-//    max-height: 600px;
-//  }
-//}
+#bf-revz-widget-3856313784 {
+  @media screen and (max-width: 400px) {
+    max-height: 600px;
+  }
+}
