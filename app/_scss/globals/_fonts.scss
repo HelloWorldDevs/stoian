@@ -70,7 +70,7 @@ h1 {
 
 @mixin h2() {
 	@include headings();
-	@include font-size(48px, 41px, 35px, 32px, 32px);
+	@include font-size(48px, 41px, 35px, 32px, 30px);
 }
 
 .h2,
@@ -80,7 +80,7 @@ h2 {
 
 @mixin h3() {
 	@include headings();
-	@include font-size(35px, 30px, 30px, 28px, 19px);
+	@include font-size(35px, 30px, 30px, 28px, 26px);
 }
 
 .h3,
