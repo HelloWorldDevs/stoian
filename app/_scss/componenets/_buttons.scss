@@ -7,7 +7,7 @@ button.btn {
   background-color: $c-btn;
   color: $c-white;
   border: 2px solid $c-white;
-  border-radius: 0.1px;
+  border-radius: 4px;
   &:hover, &:focus {
     background-color: darken($c-btn, 15% );
     text-decoration: none;

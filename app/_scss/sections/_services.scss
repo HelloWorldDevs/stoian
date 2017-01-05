@@ -117,13 +117,13 @@
 .service-modal-wrapper {
   & .modal-title {
     @include h3;
-    font-family: $ff-lato;
+    font-family: $ff-mont;
     font-weight: 700;
-    color: $c-darkish-purple;
+    color: $c-grey-red;
     padding-top: 10px;
   }
   & p {
-    color: $c-darkish-purple;
+    color: $c-grey-red;
     padding-bottom: 15px;
   }
   .modal-image {
