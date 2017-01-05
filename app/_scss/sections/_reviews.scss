@@ -30,5 +30,14 @@
 
   @include birdeye-footer();
 
+  /// Mobile fix for standard birdeye review restack
+  @media screen and (max-width: $width-sm) {
+    background-color: #b1c1d0;
+    background-image: none;
+
+    .mobile-image {
+      margin-top: -50px;
+    }
+  }
 
 }
