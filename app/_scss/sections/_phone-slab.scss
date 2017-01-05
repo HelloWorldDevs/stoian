@@ -88,14 +88,5 @@
     }
   }
 
-  //Custom break line color for Paquette
-  &.phone-slab-2 {
-    //background-color: $c-teal-lighter;
-    &__left {
-      margin-top: 0;
-      @media screen and (max-width: $width-md) {
-      }
-    }
-  }
 
 }
