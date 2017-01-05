@@ -3,20 +3,21 @@
 .mobile-insurance-fix {
   display: none;
   @media (max-width: $width-sm) {
-    margin-top: -150px;
+    margin-top: -100px;
     display: block;
   }
 }
 
 #section-insurance {
   padding-top: 50px;
-  background-image: url('/assets/loud-insurance.jpg');
+  background-image: url('/assets/stoian-insurance.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   @media (max-width: $width-sm) {
-    background-color: $c-insurance-yellow;
+    background-color: #ffffff;
     background-image: none;
+    text-align: center;
   }
   .sub-text {
     line-height: 1.2;
@@ -26,20 +27,25 @@
   }
 
   h2 {
-    color: $c-darkish-purple;
-    font-family: $ff-lato;
-    font-weight: 900;
+    color: $c-grey-red;
+    font-family: $ff-mont;
+    font-weight: 700;
+    @include font-size(72px, 65px, 50px, 45px, 32px);
     margin-bottom: 0;
     text-transform: uppercase;
   }
   h4 {
-    @include h3;
-    color: $c-yellow-black;
+    @include font-size(48px, 41px, 32px, 32px, 22px);
+    font-family: $ff-great-vibes;
+    color: $c-teal;
+    font-weight: 400;
   }
   h3 {
-    color: $c-orange;
-    font-weight: 900;
-    font-family: $ff-lato;
+    color: $c-grey-yellow;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: $ff-mont;
+    @include font-size(35px, 30px, 27px, 28px, 22px);
   }
   .btn {
     padding-top: 10px;
@@ -48,7 +54,9 @@
     margin-bottom: 100px;
   }
   h6 {
+    color: $c-greyer-yellow;
     font-size: 16px;
     font-family: $ff-open;
+    font-weight: 400;
   }
 }
