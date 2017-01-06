@@ -19,3 +19,34 @@
     //text-align: center;
   }
 }
+
+#section-links {
+  background-color: #CFD1CE;
+
+  .container {
+    position: relative;
+  }
+
+  .col-left {
+    a {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $width-sm) {
+    .col-left {
+      a {
+        position: relative;
+      }
+    }
+    .col-left, .col-right {
+      text-align: center;
+    }
+  }
+}
