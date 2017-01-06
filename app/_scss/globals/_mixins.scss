@@ -75,7 +75,7 @@
 }
 
 /// Set Link Color - sets the color of a link, and its hover state
-/// @group style
+/// @group styling
 /// @param $color
 @mixin link-color($color) {
   color: $color;
@@ -85,6 +85,8 @@
 }
 
 /// Styling for the Birdeye Reviews Footer
+/// @group reviews
+/// @example #section
 @mixin birdeye-footer() {
   .bf-dv {
     padding-top: 30px;
@@ -94,5 +96,30 @@
   }
   .bf-pro {
     color: #FFF !important;;
+  }
+}
+
+/// Social Media Link mixin
+/// @group footer
+/// @param $name - name of the social media site, such as 'google', that matches the html class names
+/// @example #section-footer { @include social-media-link('facebook'); }
+@mixin social-media-link($name) {
+  a.si-#{$name} {
+    display: inline-block;
+    margin-right: 20px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .icon-#{$name} {
+    color: white;
+    font-size: 25px;
+    width: 37px;
+    text-align: center;
+    border-radius: 8px;
+    @media (max-width: $width-sm) {
+      float: none;
+      margin-right: auto;
+    }
   }
 }

@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: $c-darker-purple;
+  background-color: #575757;
   border-top: none;
   a {
     @include link-color($c-white);
@@ -9,7 +9,6 @@
   p {
     font-weight: 100;
     font-size: 14px;
-    float: left;
     color: white;
     @media screen and (max-width: $width-md) {
       float: none;
@@ -18,95 +17,34 @@
   @media screen and (max-width: $width-md) {
     text-align: center;
   }
+
+  .footer-padding {
+    padding: 40px;
+    @media (max-width: $width-md) {
+      padding: 20px;
+    }
+  }
+
+  @include social-media-link('facebook');
+  @include social-media-link('twitter');
+  @include social-media-link('google');
+  @include social-media-link('pinterest');
+  @include social-media-link('linkedin');
+
+  .flex--wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $width-md) {
+      flex-direction: column-reverse;
+      .social-media-links {
+        display: inline-block;
+        a {
+          float: none;
+        }
+      }
+    }
+  }
+
 }
 
 
-a.si-facebook {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-    margin-right: 0;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.icon-facebook {
-  color: white;
-  font-size: 25px;
-  background-color: #3B5998;
-  width: 37px;
-  text-align: center;
-  border-radius: 8px;
-  //margin-right: 20px;
-  @media (max-width: $width-sm) {
-    float: none;
-    //margin-left: 20px;
-    margin-right: auto;
-  }
-}
-
-a.si-google {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
-//
-//.icon-google {
-//  color: white;
-//  font-size: 25px;
-//  background-color: #b62b1c;
-//  border: 1px solid white;
-//  width: 37px;
-//  text-align: center;
-//  border-radius: 8px;
-//  float: right;
-//  @media (max-width: $width-sm) {
-//    float: none;
-//    margin-left: auto;
-//    margin-right: auto;
-//  }
-//}
-
-a.si-yelp {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.icon-yelp {
-  color: white;
-  font-size: 25px;
-  width: 37px;
-  text-align: center;
-  border-radius: 8px;
-  //margin-right: 20px;
-  @media (max-width: $width-sm) {
-    float: none;
-    //margin-left: 20px;
-    margin-right: auto;
-  }
-}
-
-
-.footer-padding {
-  padding: 40px 0px;
-  @media (max-width: $width-md) {
-    padding: 20px 0px;
-  }
-}
