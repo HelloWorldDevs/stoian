@@ -131,24 +131,26 @@
     #primary-menu-trigger {
       right: 0;
       left: inherit;
-      color: $c-darkish-purple;
+      color: #575757;
     }
     #primary-menu .show {
       background-color: $c-white;
     }
   }
 
-  &, #header-wrap, #logo img {
-    height: 120px;
+ @media screen and (min-width: $width-md - 1) {
+   &, #header-wrap, #logo img {
+     height: 120px;
 
-  }
-  &.sticky-header:not(.static-sticky), &.sticky-header:not(.static-sticky) &-wrap, &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-    height: 100px;
-  }
-  &.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
-    padding-top: 44px;
-    padding-bottom: 19px;
-  }
+   }
+   &.sticky-header:not(.static-sticky), &.sticky-header:not(.static-sticky) &-wrap, &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+     height: 100px;
+   }
+   &.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
+     padding-top: 44px;
+     padding-bottom: 19px;
+   }
+ }
 
 
 }
