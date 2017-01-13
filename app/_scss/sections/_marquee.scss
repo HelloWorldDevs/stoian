@@ -80,23 +80,30 @@
   }
   .slide3 {
     h1 {
-      color: $c-darkish-purple;
+      color: #575757;
       margin-bottom: 0;
       font-weight: 700;
-      font-family: $ff-roboto-condensed;
+      font-family: $ff-mont;
+      text-transform: uppercase;
       line-height: $lh-sm;
     }
     h2 {
-      color: $c-brick;
+      color: #3AA5CB;
       line-height: $lh-sm;
-      font-family: $ff-lato;
+      font-family: $ff-great-vibes;
+      font-weight: 400;
     }
-    h4 {
-      color: $c-darkish-purple;
-      font-weight:bold;
-      font-family: $ff-lato;
+    hr {
+      border-top-color: #979797;
+      width: 350px;
+    }
+    h3 {
+      color: #71706E;
+      font-weight:400;
+      font-family: $ff-mont;
       line-height: $lh-sm;
       margin-bottom: $spacing-lg;
+      @include h2(2);
     }
     .btn {
       @include lr-padding(80px, 60px, 60px);

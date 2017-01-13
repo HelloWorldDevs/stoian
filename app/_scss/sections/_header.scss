@@ -67,7 +67,7 @@
   font-family: $ff-mont;
   font-weight: 700;
 
-  background-color: rgba($c-white,0);
+  background-color: rgba($c-white, 0);
 
   #primary-menu-trigger {
     font-size: 30px;
@@ -91,8 +91,8 @@
     margin-right: 0;
     border-right: none;
 
-    @include nav-color($c-grey-green);
-    @include nav-color($c-teal-lighter, 1);
+    @include nav-color(#626161);
+    @include nav-color(#E87400, 1);
     @include nav-color($c-dark-blue, 2);
     @include nav-color($c-beige, 3);
   }
@@ -100,7 +100,7 @@
   //when you scroll down
   &.sticky-header {
     #header-wrap {
-      background-color: rgba($c-white,0.7);
+      background-color: rgba($c-white,1);
     }
     #logo {
       img:first-child {
@@ -137,7 +137,20 @@
       background-color: $c-white;
     }
   }
-  
+
+  &, #header-wrap, #logo img {
+    height: 120px;
+
+  }
+  &.sticky-header:not(.static-sticky), &.sticky-header:not(.static-sticky) &-wrap, &.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    height: 100px;
+  }
+  &.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
+    padding-top: 44px;
+    padding-bottom: 19px;
+  }
+
+
 }
 
 #primary-menu ul li > a {
@@ -146,16 +159,16 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 17px;
-  padding: 29px 14px;
+  padding: 56px 14px;
   @media screen and (max-width: 1300px) {
     font-size: 16px;
-    padding: 29px 12px;
+    padding: 56px 12px;
     padding-bottom: 10px;
   }
   @media screen and (max-width: $width-lg) {
     font-size: 14px;
     letter-spacing: 0.7px;
-    padding: 29px 8px;
+    padding: 56px 8px;
     padding-bottom: 10px;
   }
   @media screen and (max-width: 1090px) {

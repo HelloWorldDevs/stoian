@@ -68,9 +68,9 @@ h1 {
 }
 
 
-@mixin h2() {
+@mixin h2($offset: 0) {
 	@include headings();
-	@include font-size(48px, 41px, 35px, 32px, 30px);
+	@include font-size(#{48 - $offset}px, #{41 - $offset}px, #{35 - $offset}px, #{32 - $offset}px, 30px);
 }
 
 .h2,
