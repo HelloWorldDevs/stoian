@@ -16,9 +16,7 @@
   }
 
   .swiper-slide .row {
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+    @include vertical-center(45%);
   }
 
   .slide1 {

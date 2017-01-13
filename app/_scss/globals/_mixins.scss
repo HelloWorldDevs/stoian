@@ -1,9 +1,9 @@
 /// Vertical Centering
 /// @group styling
 /// @example .slide-content { @include vertical-center(); }
-@mixin vertical-center() {
+@mixin vertical-center($center: 50%) {
   position: relative;
-  top: 50%;
+  top: $center;
   transform: translateY(-50%);
 }
 
