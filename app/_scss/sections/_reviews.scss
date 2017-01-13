@@ -13,6 +13,10 @@
     font-weight: 400;
     margin-bottom: 0;
     line-height: 1.5;
+    @media screen and (max-width: $width-md) {
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
   }
 
   h2 {
