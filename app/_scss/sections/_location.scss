@@ -2,7 +2,7 @@
   position: relative;
   
   .location-card--wrapper {
-    background: rgba($c-white, 0.65);
+    background: rgba($c-white, 0.85);
     position: absolute;
     z-index: 10;
     height: 100%;
@@ -28,8 +28,8 @@
   }
   img {
     width: 60%;
-    max-width: 400px;
-    padding-top: $spacing-md;
+    max-width: 300px;
+    padding-top: $spacing-sm;
     padding-bottom: $spacing-sm;
   }
   p {
